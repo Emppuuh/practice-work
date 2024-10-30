@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Demo site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div id="clock"></div>
+        </div>
+        <h1>Cats</h1>
+        <div class="card-container">
+            <div class="card-header1">
+              <h2 class="card-title">Cat Care Guide</h2>
+              <p class="card-description">A comprehensive guide to ensure your cat's well-being</p>
+            </div>
+            <div class="tabs">
+                <div class="tabs-list">
+                  <button class="tabs-trigger" data-tab="ruokinta">🐟 Feeding</button>
+                  <button class="tabs-trigger" data-tab="leikki">🐱 Play</button>
+                  <button class="tabs-trigger" data-tab="terveys">🩺 Health</button>
+                  <button class="tabs-trigger" data-tab="rakkaus">❤️ Love</button>
+                </div>
+                <div id="ruokinta" class="tabs-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Cat Feeding</h3>
+                            <p class="card-description">Tips for healthy feeding of your cat</p>
+                        </div>
+                        <div class="card-content">
+                            <p>Provide your cat with a balanced diet that includes quality cat food. Ensure fresh water is always available.</p>
+                            <ul>
+                                <li><strong>Quality cat food:</strong> Choose food that has high protein content and low fillers.</li>
+                                <li><strong>Wet vs. dry food:</strong> Offer both wet and dry food for a balanced diet.</li>
+                                <li><strong>Fresh water:</strong> Keep the water bowl always full and consider a water fountain.</li>
+                                <li><strong>Food portioning:</strong> Use a measuring cup and avoid overfeeding.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="leikki" class="tabs-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Play and Activities</h3>
+                            <p class="card-description">Ideas for entertaining your cat</p>
+                        </div>
+                        <div class="card-content">
+                            <p>Your cat needs regular playtime and activities. Try different toys, such as balls, strings, and interactive games.</p>
+                            <ul>
+                                <li><strong>The importance of play:</strong> Active play keeps your cat healthy and happy.</li>
+                                <li><strong>Types of play:</strong> Balls, strings, and feathers can mimic your cat's hunting behavior.</li>
+                                <li><strong>Interactive toys:</strong> Laser pointers and moving toys provide challenges and stimulation.</li>
+                                <li><strong>Variety:</strong> Change toys regularly to keep your cat's interest.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="terveys" class="tabs-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Health Care</h3>
+                            <p class="card-description">Essential health care tips</p>
+                        </div>
+                        <div class="card-content">
+                            <p>Regular vet visits, vaccinations, and dental care are important for your cat's health. Also, monitor any changes in your cat's behavior.</p>
+                            <ul>
+                                <li><strong>Regular vet visits:</strong> Ensure annual check-ups and vaccinations.</li>
+                                <li><strong>Dental care:</strong> Dental hygiene prevents many problems.</li>
+                                <li><strong>Signs of a healthy cat:</strong> Monitor your cat's weight and behavior; pay attention to changes.</li>
+                                <li><strong>Spaying/neutering:</strong> Spaying increases your cat's lifespan and health.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="rakkaus" class="tabs-content">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">Love and Attention</h3>
+                            <p class="card-description">How to show love to your cat</p>
+                        </div>
+                        <div class="card-content">
+                            <p>Show love to your cat by petting, playing, and spending time with it. Remember to respect your cat's personal space and boundaries.</p>
+                            <ul>
+                                <li><strong>Gentle touch:</strong> Pet your cat gently and respect its boundaries.</li>
+                                <li><strong>Quality time:</strong> Ensure you spend time playing and socializing with your cat.</li>
+                                <li><strong>Enrichment:</strong> Create an enriched environment for your cat with climbing and play opportunities.</li>
+                                <li><strong>Voice and speech:</strong> Speak calmly to your cat – it will recognize your voice and find comfort in it.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Favorite Cat Breeds</h1>
+                <form id="breedForm">
+                    <div>
+                        <label for="catBreed" class="form-label">Add a cat breed:</label>
+                        <input type="text" id="catBreed" class="form-control" required>
+                    </div>
+                    <button type="button" id="addBreedBtn" class="btn btn-primary">Add Breed</button>
+                </form>
+                <h2>Your Favorite Breeds:</h2>
+                <ul id="breedList"></ul>
+            </div>
+            <div class="section">
+                <h2>Cat Age Calculator</h2>
+                <form id="ageCalculator">
+                    <div>
+                        <label for="catAge" class="form-label">Cat Age in Years:</label>
+                        <input type="number" id="catAge" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calculate Human Age</button>
+                </form>
+                <p id="result" class="hidden"></p>
+            </div>
+            <div class="section">
+                <h2>Random Cat Fact</h2>
+                <p id="catFact"></p>
+                <button id="newFactBtn" class="btn btn-primary">New Fact</button>
+            </div> 
+            <div class="section">
+                <h2>Random Cat Image</h2>
+                <img id="catImage" src="" alt="Random Cat Image" class="mb-3">
+                <div>
+                    <button id="newImageBtn" class="btn btn-primary">New Image</button>
+                </div>
+            </div>
+            <script src="./js/functions.js"></script>
+        </body>
+        </html>
