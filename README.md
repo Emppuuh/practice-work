@@ -16,7 +16,7 @@ This site serves as a helpful resource for cat owners and enthusiasts. It offers
 For assistance with the project, users can reach out via the project's GitHub issues page or contact the project maintainer directly via email (if provided). Users can also refer to the documentation within the code comments for further guidance.
 
 ## Who maintains and contributes to the project
-This project is maintained by [Your Name]. Contributions are welcome! Feel free to submit pull requests or report issues on the project's repository.
+This project is maintained by Emppuuh. Contributions are welcome! Feel free to submit pull requests or report issues on the project's repository.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
